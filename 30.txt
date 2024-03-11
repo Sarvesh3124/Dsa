@@ -1,0 +1,472 @@
+1.PRINTING NAME
+#include<stdio.h>
+void main()
+{
+ printf("My name is sarvesh");
+}
+
+2.PRINTING USING STRING
+#include<stdio.h>
+void main()
+{
+ char s[10];
+ scanf("%s",s);
+ printf("%s",s);
+}
+
+3.printing using string using gets
+
+#include<stdio.h>
+void main()
+{
+ char s[10];
+ gets(s);
+ printf("%s",s);
+}
+
+4.printing using string with puts
+
+#include<stdio.h>
+void main()
+{
+ char s[10];
+ gets(s);
+ puts(s);
+}
+
+5.using string compare
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ char s[10],a[10];
+ gets(s);
+ gets(a);
+if( stricmp(s,a))
+{
+    printf("1");
+}
+}
+
+6.
+
+#include<stdio.h>
+#include<string.h>
+int compare(char *s[10],char *a[10]);
+void main()
+{
+ char s[10],a[10];
+ gets(a);
+ gets(s);
+ if(compare(s,a))
+{
+    printf("1");
+}
+}
+int compare(char *s[10],char *a[10])
+{
+    int j;
+    if( stricmp(s,a))
+    {
+       return 1;
+    }
+
+}
+
+
+7.string copy function
+
+
+#include<stdio.h>
+#include<string.h>
+int compare(char *s[10],char *a[10]);
+void main()
+{
+ char s[10],a[10];
+ gets(a);
+ a[10]=compare(s,a);
+    printf("%s",s);
+
+}
+int compare(char *s[10],char *a[10])
+{
+  int j;
+  strcpy(s,a);
+
+   return *s;
+
+}
+
+8.length of the string
+
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b;
+ char s[10];
+ gets(s);
+ b=strlen(s);
+ printf("%d",b);
+
+}
+
+
+9.length of the string
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b;
+ char s[10];
+ gets(s);
+ b=strlen(s);
+ if(b%2==1)
+ {
+  printf("%d",b);
+ }
+
+
+}
+
+10.using bitwise and(&)
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b=5,a=10,c;
+ c=a&b;
+ printf("%d",c);
+
+}
+
+
+11.using bitwise OR(|)
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b=5,a=10,c;
+ c=a&b;
+ printf("%d",c);
+
+}
+
+12.using bitwise exor(^)
+
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b=5,a=10,c;
+ c=a^b;
+ printf("%d",c);
+
+}
+
+
+13.using xor operation in condition
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b=5,a=11,c;
+ c=a+b;
+ if(c%2==0)
+ {
+    c=a^b;
+ printf("%d",c);
+ }
+
+}
+
+
+14.using xor operation
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b=5,a=10,c;
+ c=a+b;
+ if(c%2==1)
+ {
+    c=a^b;
+ printf("%d",c);
+ }
+
+}
+
+
+15.using xor operation
+
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,a,c;
+ scanf("%d %d",&a,&b);
+ c=a+b;
+ if(c%2==1)
+ {
+    c=a^b;
+ printf("%d",c);
+ }
+
+}
+
+
+16.using xor operation
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,a,c;
+ scanf("%d %d",&a,&b);
+ c=a+b;
+ if(c%2==0)
+ {
+    c=a^b;
+ printf("%d",c);
+ }
+ else printf("nothing to print");
+
+}
+
+17.using OR operation(|)
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,a,c;
+ scanf("%d %d",&a,&b);
+ c=a+b;
+ if(c%2==0)
+ {
+    c=a|b;
+ printf("%d",c);
+ }
+ else printf("nothing to print");
+
+}
+
+
+18.using OR operation(|)
+
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,a,c;
+ scanf("%d %d",&a,&b);
+ c=a+b;
+ if(c%2==0)
+ {
+    c=a|b;
+    a=c^b;
+ printf("%d",a);
+ }
+ else printf("nothing to print");
+
+}
+
+
+19.using not operation (~)
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,a,c;
+ scanf("%d %d",&a,&b);
+ c=a+b;
+ c=~c+1;
+ if(c%2==0)
+ {
+    c=a|b;
+    a=c^b;
+ printf("%d",a);
+ }
+ else printf("nothing to print");
+
+}
+
+20.using (&&)
+
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,c;
+ scanf("%d %d",&b,&c);
+ if(c&&b)
+ printf("%d",c+b);
+}
+
+
+21.
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,c;
+ scanf("%d %d",&b,&c);
+ if(c&&b)
+ printf("%d",c+b);
+ if(c^b)
+    printf("%d",b);
+}
+
+
+22.
+
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,c;
+ scanf("%d %d",&b,&c);
+
+  c=c>>2;
+  b=b<<2;
+
+
+ printf("%d %d",c,b);
+}
+
+23.
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,c;
+ scanf("%d %d",&b,&c);
+
+  c=c>>2;
+  b=b<<2;
+
+ printf("%d",c+b);
+}
+
+24.
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,c,a;
+ scanf("%d %d",&b,&c);
+
+  a=b+c;
+
+ printf("%d",a);
+}
+
+25.
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,c;
+ scanf("%d %d",&b,&c);
+ printf("%d",c+b);
+}
+
+
+26.
+
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,c;
+ scanf("%d %d",&b,&c);
+ if(b||c)
+ printf("%d",c+b);
+}
+
+27.
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,c;
+ scanf("%d %d",&b,&c);
+ if(b>c||b&c)
+ printf("%d",c+b);
+}
+
+
+28.
+
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,c,a;
+ scanf("%d %d",&b,&c);
+ a=b>c&&printf("sarvesh");
+ printf("\n%d",a);
+}
+
+28.
+
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,c,a;
+ scanf("%d %d",&b,&c);
+ a=c%b;
+ printf("\n%d",c);
+}
+
+29.
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,c,a;
+ scanf("%d %d",&b,&c);
+ a=c/b;
+ printf("\n%d",a);
+}
+
+30.
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ int b,c,a;
+ scanf("%d %d",&b,&c);
+ a=c/b+2;
+ printf("\n%d",a);
+}
+
+
+
+
+
+
